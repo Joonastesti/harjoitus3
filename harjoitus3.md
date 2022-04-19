@@ -28,7 +28,7 @@ Näiden jälkeen git pull ja git push ja muutokset menivät perille GitHubiin.
 - git blame harjoitus3.md -komento näyttää kyseisen tiedoston tiedot rivi riviltä kuka on muokannut kyseistä kohtaa ja milloin. Kertoo myös riveistä jos niitä ei ole vielä commitattu. 
 
 ![image](https://github.com/Joonastesti/harjoitus3/blob/main/git4.png)
-![image](https://github.com/Joonastesti/harjoitus3/blob/main/git5.png))
+![image](https://github.com/Joonastesti/harjoitus3/blob/main/git5.png)
 
 ## d) Huppis! Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset ‘git reset --hard’. Huomaa, että tässä toiminnossa ei ole peruutusnappia.
 
@@ -38,3 +38,23 @@ Tuhosin muutokset git reset --hard -komennolla. Katsoin kyseistä txt -tiedostoa
 ![image](https://github.com/Joonastesti/harjoitus3/blob/main/git6.png)
 
 ## e) Formula. Tee uusi salt-tila (formula, moduli, infraa koodina). (Eli uusi tiedosto esim. /srv/salt/terontila/init.sls). Voit tehdä ihan yksinkertaisen parin funktion (pkg, file...) tilan, tai edistyneemmin asentaa ja konfiguroida minkä vain uuden ohjelman: demonin, työpöytäohjelman tai komentokehotteesta toimivan ohjelman. Käytä tarvittaessa ‘find -printf “%T+ %p\n”|sort’ löytääksesi uudet asetustiedostot.
+
+Loin uuden salt tilan nimeltään init.sls joka asentaa chromium paketin ja tarkastaa että kone on ajantasalla.
+Asensin ensin käsiksi jo valmiiksi chromiumin sudo apt-get install chromium ja sen jälkeen loin tilan ja testasin sitä.
+Ensitestauksella uptodate-ID sai haaviin chromiumin uuden version ja päivitti sen. 
+
+![image](https://github.com/Joonastesti/harjoitus3/blob/main/git10.png) 
+![image](https://github.com/Joonastesti/harjoitus3/blob/main/git7.png) 
+![image](https://github.com/Joonastesti/harjoitus3/blob/main/git8.png) 
+![image](https://github.com/Joonastesti/harjoitus3/blob/main/git9.png) 
+
+## Lähteet
+
+https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html
+
+
+//////////////////////////////////////////////
+
+Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. https://www.gnu.org/licenses/gpl-3.0.html
+
+Pohjana Tero Karvinen 2022 Palvelinten Hallinta -kurssi https://terokarvinen.com/2021/configuration-management-systems-2022-spring/
