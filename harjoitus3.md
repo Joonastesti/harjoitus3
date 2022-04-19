@@ -26,6 +26,7 @@ Näiden jälkeen git pull ja git push ja muutokset menivät perille GitHubiin.
 
 ## d) Huppis! Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset ‘git reset --hard’. Huomaa, että tässä toiminnossa ei ole peruutusnappia.
 
-- 
+- Tein tyhmän muutoksen muutos1.txt -tiedostoon, jonka jälkeen laitoin git add ., mutta en git commit -komentoa. 
+Tuhosin muutokset git reset --hard -komennolla. Katsoin kyseistä txt -tiedostoa niin lisäämäni virke oli kadonnut. 
 
 ## e) Formula. Tee uusi salt-tila (formula, moduli, infraa koodina). (Eli uusi tiedosto esim. /srv/salt/terontila/init.sls). Voit tehdä ihan yksinkertaisen parin funktion (pkg, file...) tilan, tai edistyneemmin asentaa ja konfiguroida minkä vain uuden ohjelman: demonin, työpöytäohjelman tai komentokehotteesta toimivan ohjelman. Käytä tarvittaessa ‘find -printf “%T+ %p\n”|sort’ löytääksesi uudet asetustiedostot.
